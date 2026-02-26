@@ -1,0 +1,91 @@
+/* Basic styling for the to-do app */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#task-form button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#task-form button:hover {
+    background: #218838;
+}
+
+#tasks {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task.done .title {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task button.toggle {
+    background: #007bff;
+    color: #fff;
+}
+
+.task button.toggle:hover {
+    background: #0069d9;
+}
+
+.task button.delete {
+    background: #dc3545;
+    color: #fff;
+}
+
+.task button.delete:hover {
+    background: #c82333;
+}
